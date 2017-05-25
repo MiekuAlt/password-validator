@@ -38,4 +38,41 @@ public class ValidatorTest {
         if(pw2.approved) assertTrue(pw2.password.length() >= 8);
     }
 
+    @Test
+    // Makes sure there is at least 1 digit
+    public void atLeastDigit() throws Exception {
+        // Initializing the testers
+        Password pw1 = new Password("froggers");
+        Password pw2 = new Password("froggers1");
+
+        // Doing the checks!
+        if(pw1.approved) assertTrue(pw1.password.matches(".*\\d+.*"));
+        if(pw2.approved) assertTrue(pw2.password.matches(".*\\d+.*"));
+    }
+
+    @Test
+    // Makes sure there is at least a symbol
+    public void atLeastSymbol() throws Exception {
+        // Initializing the testers
+        Password pw1 = new Password("froggers");
+        Password pw2 = new Password("froggers!");
+
+        // Doing the checks!
+        if(pw1.approved) assertTrue(pw1.password.matches(".*[^A-Za-z0-9]+.*"));
+        if(pw2.approved) assertTrue(pw2.password.matches(".*[^A-Za-z0-9]+.*"));
+    }
+
+    @Test
+    // Makes sure there is both upper case and lower case characters
+    public void bothCases() throws Exception {
+        // Initializing the testers
+        Password pw1 = new Password("froggers");
+        Password pw2 = new Password("FROGGERS");
+        Password pw3 = new Password("froggErs");
+
+        // Doing the checks!
+        if(pw1.approved) assertTrue(pw1.password.matches(".*[A-Z]+.*") && pw1.password.matches(".*[a-z]+.*"));
+        if(pw2.approved) assertTrue(pw2.password.matches(".*[A-Z]+.*") && pw2.password.matches(".*[a-z]+.*"));
+        if(pw3.approved) assertTrue(pw3.password.matches(".*[A-Z]+.*") && pw3.password.matches(".*[a-z]+.*"));
+    }
 }
