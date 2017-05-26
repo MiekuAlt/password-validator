@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Password Validator</string>
+    <string name="validate_button">VALIDATE</string>
+    <string name="password_box">password</string>
 </resources>

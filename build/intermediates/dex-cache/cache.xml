@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Michael\.android\build-cache\5158b5ebc53a8498dc5a68124c2bdad2e536f0f7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="C:\Users\Michael\Desktop\LocalSoftEng\Assignment 2\password-validator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6876b66a21aa74d00cc0b46c5e6c50dfe597e273\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Michael\.android\build-cache\206693c37d095f1d5479314fa363aebdef4c6773\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="C:\Users\Michael\Desktop\LocalSoftEng\Assignment 2\password-validator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d2d4b209d078a2dbc082d015b576b70357a5113c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Michael\.android\build-cache\a380d58321ab1595e5ef44fd8690a46458a73bbc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="C:\Users\Michael\Desktop\LocalSoftEng\Assignment 2\password-validator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f49343a4d256bc8d997f4fcc7fa2c931847eb981\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Michael\Desktop\LocalSoftEng\Assignment 2\password-validator\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="C:\Users\Michael\Desktop\LocalSoftEng\Assignment 2\password-validator\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_20ab9fb775f50daf7a2d68af575bc9e7e090d038\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Michael\Desktop\LocalSoftEng\Assignment 2\password-validator\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="765a64b431f47ca96a077657f53478821d35efb0">
+        <dex dex="C:\Users\Michael\Desktop\LocalSoftEng\Assignment 2\password-validator\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_e28abcd31fc7dbb276dc0b24cf9db945a9c512f8\classes.dex" />
+    </item>
+
+</items>
