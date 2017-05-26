@@ -14,7 +14,7 @@ public class Password {
     public boolean approved;
 
     public Password(String password) {
-        rulesApproved = validate(password);
+        validate(password);
 
         // Determines if the password is approved, based on the number of passed rules
         if(rulesApproved >= NUM_RULES) {
@@ -23,26 +23,24 @@ public class Password {
     }
 
     // Validates the password and returns the number of rules it has passed
-    private int validate(String password) {
-        int numPassed = 0;
+    private void validate(String password) {
         this.password = password;
 
         if(isNotPassword(password)) {
-            numPassed++;
+            rulesApproved++;
         }
         if(isLongEnough(password)) {
-            numPassed++;
+            rulesApproved++;
         }
         if(hasDigit(password)) {
-            numPassed++;
+            rulesApproved++;
         }
         if(hasSymbol(password)) {
-            numPassed++;
+            rulesApproved++;
         }
         if(hasBothCases(password)) {
-            numPassed++;
+            rulesApproved++;
         }
-        return numPassed;
     }
 
     /****** The Rules for the Validator ******/
