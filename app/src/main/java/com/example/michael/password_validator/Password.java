@@ -6,6 +6,9 @@ package com.example.michael.password_validator;
 
 public class Password {
 
+    private int MIN_LENGTH = 8; // The minimum length of the password
+    private int NUM_RULES = 2; // The number of rules required to pass for the password to be approved
+
     public String password;
     public int rulesApproved;
     public boolean approved;
@@ -14,7 +17,7 @@ public class Password {
         rulesApproved = validate(password);
 
         // Determines if the password is approved, based on the number of passed rules
-        if(rulesApproved >= 2) { // Currently zero since we have no rules yet...
+        if(rulesApproved >= NUM_RULES) { // Currently zero since we have no rules yet...
             approved = true;
         }
     }
@@ -27,14 +30,13 @@ public class Password {
         if(isNotPassword(password)) {
             numPassed++;
         }
-
         if(isLongEnough(password)) {
             numPassed++;
         }
-
         return numPassed;
     }
 
+    /****** The Rules for the Validator ******/
     // Checking if the string is not "password"
     private boolean isNotPassword(String password) {
         return !password.toLowerCase().equals("password");
@@ -42,6 +44,6 @@ public class Password {
 
     // Checks if the password is at least 8 chars long
     private boolean isLongEnough(String password) {
-        return password.length() >= 8;
+        return password.length() >= MIN_LENGTH;
     }
 }
